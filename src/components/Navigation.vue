@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="branding">
-      <router-link class="link" :to="{ name: 'Home' }">
-        <h2>BunBlogs</h2></router-link
+      <router-link class="link main-link" :to="{ name: 'Home' }">
+        BunBlogs</router-link
       >
     </div>
     <div class="nav-links">
@@ -29,12 +29,16 @@ export default {};
   z-index: 999;
   padding: 0.5rem 1rem;
 }
+.main-link {
+  font-size: 2rem;
+}
+
 .link {
   text-decoration: none;
   margin-left: 1rem;
   color: black;
   user-select: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 .link:hover {
   color: #1c80c4;
